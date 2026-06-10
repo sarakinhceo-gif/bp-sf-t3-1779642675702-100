@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마포 셔츠룸 성우이벤트 | 프리미엄 비즈니스 셔츠 케어 정보</title>
+    <meta name="description" content="마포 셔츠룸 성우이벤트의 체계적인 셔츠 관리 시스템과 비즈니스 이벤트 솔루션 상세 정보. 15년 업력, 98% 고객 만족도. 예약 문의: 010-6279-0862">
+    <meta name="keywords" content="마포 셔츠룸 정보, 마포 셔츠룸 성우이벤트, 마포 셔츠룸 시스템 소개, 마포 비즈니스 셔츠 케어, 마포 셔츠 대여 서비스, 마포구 셔츠룸 정보">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sf-t3-1779642675702-100.vercel.app/info">
+    <meta property="og:title" content="마포 셔츠룸 성우이벤트 | 프리미엄 비즈니스 셔츠 케어 정보">
+    <meta property="og:description" content="마포 셔츠룸 성우이벤트의 체계적인 셔츠 관리 시스템과 비즈니스 이벤트 솔루션 상세 정보. 15년 업력, 98% 고객 만족도.">
+    <meta property="og:url" content="https://sf-t3-1779642675702-100.vercel.app/info">
+    <meta property="og:type" content="website">
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #fafaf5;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        a {
+            color: #8b4513;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #6b3410;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #1a1a1a;
+        }
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            line-height: 1.3;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid #d4a574;
+            padding-bottom: 0.5rem;
+        }
+        h3 {
+            font-size: 1.3rem;
+            line-height: 1.4;
+            margin-bottom: 0.8rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .text-accent {
+            color: #8b4513;
+            font-weight: 500;
+        }
+        .text-small {
+            font-size: 0.875rem;
+            color: #666;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: #1a1a1a;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .logo {
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+        .navbar .logo span {
+            color: #d4a574;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        .nav-links a {
+            color: #ccc;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #d4a574;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 5px;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background: #fff;
+            transition: all 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f5f0ea 0%, #e8ddd0 100%);
+            padding: 5rem 0 4rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: #555;
+        }
+
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            padding: 3rem 0;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .card h3 {
+            margin-bottom: 0.8rem;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 4rem 0;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: #d4a574;
+            margin-bottom: 0.3rem;
+        }
+        .stat-item p {
+            color: #aaa;
+            font-size: 0.95rem;
+        }
+
+        /* Process Section */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 3rem 0;
+        }
+        .step {
+            text-align: center;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        .step-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            background: #d4a574;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        /* FAQ */
+        .faq-list {
+            padding: 3rem 0;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e0d5c8;
+            padding: 1.5rem 0;
+        }
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 1.4rem;
+            color: #8b4513;
+        }
+        .faq-answer {
+            margin-top: 1rem;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* CTA */
+        .cta-section {
+            background: linear-gradient(135deg, #d4a574 0%, #b8864e 100%);
+            padding: 4rem 0;
+            text-align: center;
+            color: #fff;
+        }
+        .cta-section h2 {
+            color: #fff;
+            border-bottom-color: rgba(255,255,255,0.3);
+        }
+        .cta-section p {
+            color: #fff;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        .tel-link {
+            display: inline-block;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: background 0.3s;
+        }
+        .tel-link:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #888;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: flex;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1a1a1a;
+                padding: 1rem;
+                gap: 1rem;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">성우<span>이벤트</span></a>
+            <button class="hamburger-menu" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/info" class="active">정보</a></li>
+                <li><a href="/services">서비스</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="tel:010-6279-0862">문의</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>마포 셔츠룸 <span class="text-accent">성우이벤트</span></h1>
+            <p>15년간 축적된 데이터 기반 셔츠 케어 시스템으로 귀하의 비즈니스 이미지를 완성합니다. 마포 지역 No.1 셔츠 관리 전문 업체.</p>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>누적 운영 연수</p>
+                </div>
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>고객 만족도</p>
+                </div>
+                <div class="stat-item">
+                    <h3>12,000+</h3>
+                    <p>월 처리 셔츠 수량</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>체계적인 셔츠 관리 시스템</h2>
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon">🔬</div>
+                <h3>과학적 섬유 분석</h3>
+                <p>셔츠 소재별 맞춤 케어 프로세스를 적용합니다. 100% 데이터 기반으로 12가지 섬유 유형을 정밀 분석하여 최적의 세탁 및 다림질 방식을 결정합니다.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">⚙️</div>
+                <h3>4단계 품질 관리</h3>
+                <p>수거 → 세탁 → 프레싱 → 최종 검수의 4단계 프로세스를 통해 매 셔츠마다 동일한 퀄리티를 보장합니다. 각 단계별 체크리스트로 오차 범위 0%를 목표로 합니다.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">📊</div>
+                <h3>실시간 모니터링</h3>
+                <p>전용 시스템을 통해 셔츠 관리 현황을 실시간으로 확인할 수 있습니다. 고객 맞춤형 리포트를 제공하여 투명한 서비스를 실현합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>전문적인 프로세스</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>셔츠 수거</h3>
+                <p class="text-small">마포 전 지역 무료 픽업 서비스. 오전 10시 이전 접수 시 당일 수거 완료.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>전문 세탁</h3>
+                <p class="text-small">친환경 세제와 전문 장비를 활용한 딥 클리닝. 오염도에 따라 세탁 시간 차별화.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>정밀 프레싱</h3>
+                <p class="text-small">산업용 프레스기와 핸드 다림질 병행. 칼라, 커프스, 플리츠까지 완벽하게.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>검수 및 배송</h3>
+                <p class="text-small">3단계 육안 검수 후 개별 포장. 흠집, 변색, 손상 여부 철저히 확인.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container faq-list">
+        <h2>자주 묻는 질문</h2>
+        <div class="faq-item">
+            <div class="faq-question">마포 셔츠룸의 평균 처리 시간은 어떻게 되나요?</div>
+            <div class="faq-answer">일반 케어 기준 24시간 이내 완료됩니다. 익스프레스 서비스(4시간)와 당일 서비스(8시간)도 운영 중이며, 이벤트 시즌에는 사전 예약 시 우선 처리해 드립니다. 마포 지역 내 배송은 오후 6시 이전 주문 건에 대해 당일 배송 완료됩니다.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">비즈니스 이벤트 셔츠 대여 서비스는 어떻게 진행되나요?</div>
+            <div class="faq-answer">행사 3일 전까지 사이즈와 수량을 확정해 주시면, 행사 당일 오전까지 모든 셔츠가 준비됩니다. 100벌 이상 대여 시 현장 스태프가 배치되어 피팅과 교체를 지원합니다. 2024년 기준 200회 이상의 기업 이벤트를 성공적으로 진행했습니다.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">마포 셔츠룸만의
+</body>
+</html>

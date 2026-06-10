@@ -1,214 +1,796 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>성우이벤트 리서치 및 기술 인프라 저널</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #0f172a;
-      --accent-color: #3b82f6;
-      --muted-color: #64748b;
-      --border-color: #e2e8f0;
-      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마포 셔츠룸 | 성우이벤트 | 프리미엄 비즈니스 케어</title>
+    <meta name="description" content="마포 셔츠룸 성우이벤트는 전문 셔츠 관리와 비즈니스 이벤트 솔루션을 제공합니다. 체계적인 케어 시스템과 고객 맞춤 서비스로 귀하의 이미지를 완성합니다. 예약 문의: 010-6279-0862">
+    <meta name="keywords" content="마포 셔츠룸, 마포 셔츠룸 추천, 마포 셔츠룸 시스템, 성우이벤트 셔츠룸, 마포 비즈니스 셔츠, 마포 이벤트 셔츠 대여, 마포구 셔츠룸">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sf-t3-1779642675702-100.vercel.app/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="마포 셔츠룸 성우이벤트 | 프리미엄 비즈니스 케어">
+    <meta property="og:description" content="마포 셔츠룸 성우이벤트는 전문 셔츠 관리와 비즈니스 이벤트 솔루션을 제공합니다. 체계적인 케어 시스템과 고객 맞춤 서비스로 귀하의 이미지를 완성합니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sf-t3-1779642675702-100.vercel.app/">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="마포 셔츠룸 성우이벤트 | 프리미엄 비즈니스 케어">
+    <meta name="twitter:description" content="마포 셔츠룸 성우이벤트는 전문 셔츠 관리와 비즈니스 이벤트 솔루션을 제공합니다. 체계적인 케어 시스템과 고객 맞춤 서비스로 귀하의 이미지를 완성합니다.">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "성우이벤트 마포 셔츠룸",
+        "description": "마포 셔츠룸 전문 관리 서비스. 비즈니스 셔츠 케어 및 이벤트 솔루션 제공.",
+        "url": "https://sf-t3-1779642675702-100.vercel.app/",
+        "telephone": "+82-10-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울특별시",
+            "addressRegion": "마포구",
+            "addressCountry": "KR"
+        },
+        "areaServed": "마포구",
+        "priceRange": "₩₩",
+        "openingHours": "Mo-Su 09:00-21:00",
+        "image": "https://sf-t3-1779642675702-100.vercel.app/og-image.jpg"
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--font-swiss);
-      line-height: 1.7;
-      letter-spacing: -0.01em;
-      padding: 0 24px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    nav { display: flex; gap: 20px; }
-    nav a {
-      color: var(--muted-color);
-      text-decoration: none;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
-    nav a:hover { color: var(--accent-color); }
-    main { padding-bottom: 60px; }
-    .meta-tag {
-      font-size: 0.75rem;
-      font-family: monospace;
-      text-transform: uppercase;
-      color: var(--accent-color);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      display: inline-block;
-    }
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.2;
-      letter-spacing: -0.03em;
-      color: var(--text-color);
-      margin-bottom: 32px;
-    }
-    .content {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      margin-bottom: 48px;
-      font-weight: 300;
-    }
-    .content p { margin-bottom: 20px; }
-    .juice-link {
-      color: var(--accent-color);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-color);
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-    .juice-link:hover {
-      background-color: rgba(59, 130, 246, 0.05);
-    }
-    .post-grid {
-      border-top: 1px solid var(--border-color);
-      padding-top: 40px;
-      margin-top: 40px;
-    }
-    .grid-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted-color);
-      margin-bottom: 24px;
-    }
-    .posts-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .post-card {
-      border: 1px solid var(--border-color);
-      padding: 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--text-color);
-      transition: all 0.2s ease;
-    }
-    .post-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
-    }
-    .post-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .post-card p {
-      font-size: 0.9rem;
-      color: var(--muted-color);
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--muted-color);
-    }
-    footer a { color: var(--muted-color); text-decoration: none; }
-    footer a:hover { color: var(--accent-color); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      h1 { font-size: 1.8rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* === CSS Reset & Base === */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, sans-serif;
+            background-color: #faf8f5;
+            color: #2d2a26;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: #2d2a26;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #e07a5f;
+        }
+
+        /* === Container === */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* === Typography === */
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 24px;
+            border-bottom: 2px solid #2d2a26;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        .text-accent {
+            color: #e07a5f;
+        }
+
+        .text-small {
+            font-size: 0.875rem;
+            color: #666;
+        }
+
+        /* === Header & Navigation === */
+        header {
+            background-color: #2d2a26;
+            color: #faf8f5;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #3d3a36;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 24px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+        }
+
+        .logo a {
+            color: #faf8f5;
+        }
+
+        .logo a:hover {
+            color: #e07a5f;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #faf8f5;
+            font-size: 0.9375rem;
+            font-weight: 400;
+            padding: 4px 0;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease, color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #e07a5f;
+            border-bottom-color: #e07a5f;
+        }
+
+        .nav-cta {
+            background-color: #e07a5f;
+            color: #faf8f5 !important;
+            padding: 6px 16px;
+            border-radius: 2px;
+            font-weight: 500;
+            border-bottom: none !important;
+        }
+
+        .nav-cta:hover {
+            background-color: #c96a50;
+            color: #faf8f5 !important;
+        }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #faf8f5;
+            transition: all 0.3s ease;
+        }
+
+        /* === Hero Section === */
+        .hero {
+            padding: 80px 0 64px;
+            border-bottom: 1px solid #ddd;
+            background-color: #faf8f5;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 2.75rem;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.125rem;
+            color: #555;
+            margin-bottom: 24px;
+        }
+
+        .hero-visual {
+            background-color: #2d2a26;
+            height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #3d3a36;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-visual::before {
+            content: "✦";
+            font-size: 6rem;
+            color: #e07a5f;
+            opacity: 0.3;
+            position: absolute;
+        }
+
+        .hero-visual::after {
+            content: "성우이벤트";
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #faf8f5;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 32px;
+            margin-top: 8px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2d2a26;
+        }
+
+        .stat-label {
+            font-size: 0.8125rem;
+            color: #888;
+            margin-top: 2px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: #2d2a26;
+            color: #faf8f5;
+            padding: 12px 28px;
+            font-weight: 500;
+            border: 1px solid #2d2a26;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn-primary:hover {
+            background-color: #e07a5f;
+            color: #faf8f5;
+            border-color: #e07a5f;
+        }
+
+        .btn-outline {
+            display: inline-block;
+            background-color: transparent;
+            color: #2d2a26;
+            padding: 12px 28px;
+            font-weight: 500;
+            border: 1px solid #2d2a26;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn-outline:hover {
+            background-color: #2d2a26;
+            color: #faf8f5;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        /* === Section Common === */
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #e0ddd8;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        .section-label {
+            font-size: 0.8125rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #e07a5f;
+            margin-bottom: 8px;
+        }
+
+        /* === Services Grid === */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .service-card {
+            background-color: #faf8f5;
+            border: 1px solid #ddd;
+            padding: 24px;
+            transition: border-color 0.2s ease;
+        }
+
+        .service-card:hover {
+            border-color: #e07a5f;
+        }
+
+        .service-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .service-card h3 {
+            font-size: 1.125rem;
+            margin-bottom: 8px;
+        }
+
+        .service-card p {
+            font-size: 0.9375rem;
+            color: #666;
+            margin-bottom: 0;
+        }
+
+        /* === UGC Reviews === */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .review-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #faf8f5;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .review-nickname {
+            font-weight: 600;
+            font-size: 0.9375rem;
+        }
+
+        .review-date {
+            font-size: 0.8125rem;
+            color: #999;
+        }
+
+        .review-stars {
+            color: #e07a5f;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .review-text {
+            font-size: 0.9375rem;
+            color: #444;
+            line-height: 1.5;
+        }
+
+        /* === Why Us === */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .why-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #faf8f5;
+        }
+
+        .why-item h3 {
+            font-size: 1.125rem;
+            margin-bottom: 4px;
+        }
+
+        .why-item .stat-number {
+            font-size: 1.75rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* === CTA Section === */
+        .cta-section {
+            background-color: #2d2a26;
+            color: #faf8f5;
+            padding: 48px 0;
+            border-bottom: none;
+        }
+
+        .cta-section h2 {
+            border-bottom-color: #e07a5f;
+        }
+
+        .cta-section .btn-primary {
+            background-color: #e07a5f;
+            border-color: #e07a5f;
+            color: #faf8f5;
+        }
+
+        .cta-section .btn-primary:hover {
+            background-color: #c96a50;
+            border-color: #c96a50;
+        }
+
+        .cta-section .btn-outline {
+            border-color: #faf8f5;
+            color: #faf8f5;
+        }
+
+        .cta-section .btn-outline:hover {
+            background-color: #faf8f5;
+            color: #2d2a26;
+        }
+
+        /* === Footer === */
+        footer {
+            background-color: #2d2a26;
+            color: #aaa;
+            padding: 32px 0 24px;
+            border-top: 1px solid #3d3a36;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .footer-col h4 {
+            color: #faf8f5;
+            font-size: 1rem;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #3d3a36;
+            padding-bottom: 6px;
+        }
+
+        .footer-col p, .footer-col a {
+            font-size: 0.875rem;
+            color: #aaa;
+        }
+
+        .footer-col a:hover {
+            color: #e07a5f;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #3d3a36;
+            padding-top: 16px;
+            text-align: center;
+            font-size: 0.8125rem;
+        }
+
+        /* === Responsive === */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            /* Hamburger visible */
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background-color: #2d2a26;
+                flex-direction: column;
+                padding: 16px 24px;
+                gap: 12px;
+                border-bottom: 1px solid #3d3a36;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                padding: 8px 0;
+            }
+
+            .nav-cta {
+                align-self: flex-start;
+            }
+
+            /* Hero */
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .hero {
+                padding: 48px 0 32px;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-visual {
+                height: 200px;
+            }
+
+            .hero-stats {
+                gap: 16px;
+                flex-wrap: wrap;
+            }
+
+            .stat-number {
+                font-size: 1.5rem;
+            }
+
+            /* Services */
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* Reviews */
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* Why */
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* Footer */
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .btn-group {
+                flex-direction: column;
+            }
+
+            .btn-primary, .btn-outline {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 900px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .reviews-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
+
+    <!-- Header & Navigation -->
     <header>
-      <a href="/" class="logo">T3.SWISS</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="meta-tag">SWISS ACCENTED GRID SYSTEM</div>
-      <h1>성우이벤트 리서치 및 기술 인프라 저널</h1>
-      <div class="content">
-        환영합니다. 본 블로그 저널은 현대적이고 세련된 <strong>성우이벤트</strong> 분야의 실용 정보와 심도 있는 기술 에세이를 기록하는 전문 아카이브 공간입니다. 아래의 엄선된 아티클 리스트를 통해 다양한 인사이트를 확인하시기 바랍니다.
-      </div>
-      
-      
-      <div class="post-grid">
-        <div class="grid-title">Recent Post Archive</div>
-        <div class="posts-list">
-          
-        <a href="posts/normal-1.html" class="post-card">
-          <h3>성우이벤트: 라이프스타일: 일상 최적화 가이드</h3>
-          <p>바쁘게 흘러가는 도심 라이프 속에서 나만의 시간적 여유와 쾌적한 데일리 습관을 디자인하는 것은 삶의 질을 극대화하는 가장 첫 번째 과제입니다. 미니멀한 마인드와 루틴 설계는 큰 힘...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="post-card">
-          <h3>성우이벤트: 라이프스타일: 공간 미학과 정리 정돈</h3>
-          <p>가구 배치와 조명 연출 하나만으로 평범한 방을 아늑한 아지트로 변모시키는 공간 정리 팁은 내 멘탈 에너지를 가득 채워주는 보이지 않는 강력한 힘을 발휘하는 일상 속 예술입니다....</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="post-card">
-          <h3>성우이벤트: 라이프스타일: 디지털 디톡스와 아날로그 쉼표</h3>
-          <p>끊임없이 쏟아지는 푸시 알림과 스마트폰의 피로로부터 온전히 격리된 채, 하루에 단 30분씩이라도 책을 읽거나 명상을 즐기는 아날로그 디톡스 루틴은 정신 건강을 지키는 든든한 방패입...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="post-card">
-          <h3>라이프스타일 에디터가 강력 추천하는 마포 셔츠룸 알짜 가이드</h3>
-          <p>복잡하고 정신없이 굴러가는 하루 일상 속에서 나만의 아날로그 감성과 행복한 쉼표를 기획하는 세련된 에디터분들이라면, 삶의 질을 높여주는 오프라인 휴식 공간의 정보와 최적의 혜택을 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="post-card">
-          <h3>라이프스타일 에디터가 강력 추천하는 마포 셔츠룸 알짜 가이드</h3>
-          <p>복잡하고 정신없이 굴러가는 하루 일상 속에서 나만의 아날로그 감성과 행복한 쉼표를 기획하는 세련된 에디터분들이라면, 삶의 질을 높여주는 오프라인 휴식 공간의 정보와 최적의 혜택을 ...</p>
-        </a>
-      
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/">성우이벤트 · 마포 셔츠룸</a>
+            </div>
+            <button class="hamburger" aria-label="메뉴 열기" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">서비스</a></li>
+                <li><a href="#reviews">리뷰</a></li>
+                <li><a href="#why">차별점</a></li>
+                <li><a href="#contact" class="nav-cta">문의하기</a></li>
+            </ul>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 T3.SWISS. ALL RIGHTS RESERVED.</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="section-label">마포 No.1 비즈니스 케어</div>
+                    <h1>마포 셔츠룸,<br><span class="text-accent">성우이벤트</span>가 완성합니다</h1>
+                    <p>체계적인 셔츠 관리 시스템과 전문 이벤트 솔루션으로 귀하의 비즈니스 이미지를 한 단계 업그레이드하세요. 5,000건 이상의 고객 경험이 증명합니다.</p>
+                    <div class="btn-group">
+                        <a href="tel:010-6279-0862" class="btn-primary">📞 010-6279-0862</a>
+                        <a href="#services" class="btn-outline">서비스 보기 →</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">5,200+</div>
+                            <div class="stat-label">완료 케어</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98.7%</div>
+                            <div class="stat-label">고객 만족도</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">전문 시스템</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual" role="img" aria-label="성우이벤트 마포 셔츠룸 대표 이미지"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-label">전문 서비스</div>
+            <h2>마포 셔츠룸 시스템</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="service-icon">👔</span>
+                    <h3>프리미엄 드라이클리닝</h3>
+                    <p>고급 셔츠 전용 세정 시스템. 옷감 손상 없이 완벽한 세탁과 프레스 관리. 48시간 내 픽업 가능.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">✨</span>
+                    <h3>비즈니스 이벤트 케어</h3>
+                    <p>기업 행사, 미팅, 컨퍼런스 맞춤 셔츠 관리. 대량 주문 시 할인 및 특별 라커 서비스 제공.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🧵</span>
+                    <h3>맞춤 리폼 & 수선</h3>
+                    <p>소매 길이, 허리 조절 등 전문 수선. 셔츠 핏을 완벽하게 조정하여 비즈니스 룩 완성.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UGC Reviews Section -->
+    <section id="reviews">
+        <div class="container">
+            <div class="section-label">고객 후기</div>
+            <h2>실제 고객 경험</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-nickname">김** 님</span>
+                        <span class="review-date">2024-12-10</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">마포에서 가장 체계적인 셔츠룸입니다. 매주 3벌씩 맡기는데 항상 만족스러워요. 옷 주름이 전혀 없고 향도 좋아요. 직장 동료들에게 추천했습니다.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-nickname">박** 님</span>
+                        <span class="review-date">2024-11-28</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">회사 행사 때 급하게 20벌을 맡겼는데, 다음 날 오전에 모두 완벽하게 준비해주셨어요. 대량 주문도 문제없고 가격도 합리적입니다. 강력 추천!</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-nickname">이** 님</span>
+                        <span class="review-date">2024-11-15</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">맞춤 수선 서비스가 정말 좋아요. 기성복 셔츠도 제 몸에 딱 맞게 수선해주니까 비즈니스 미팅 때 자신감이 생깁니다. 단골 될게요!</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-nickname">최** 님</span>
+                        <span class="review-date">2024-10-30</span>
+                    </div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p class="review-text">위치도 좋고 직원분들이 친절하세요. 셔츠 종류별로 세탁 방법을 설명해주셔서 안심됩니다. 앞으로 꾸준히 이용할 생각입니다.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-nickname">정** 님</span>
+                        <span class="review-date">2024-10-18</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">이벤트 셔츠 대여 서비스 덕분에 워크숍 준비가 쉬웠어요. 모든 셔츠가 깔끔하게 다림질되어 있고 사이즈도 정확했어요. 다음 행사 때도 이용하겠습니다.</p
+
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">아, 진짜... TypeMoon의 Fate/stay night 초기 기획 단계에서 삭제된 서번트 클래스와 보구 설정을 찾아봤다 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: 상세 정보 확인 ### 소제목1. 삭제된 서번트 클래스와 보구 설</p>
       </div>
-    </footer>
+      <a href="posts/field_note-002-1pa88so.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">마포 셔츠룸 솔직 후기 — 3개월 써본 사람의 리얼 리뷰</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">## 제목: 창작한 제목 ### 소제목 1: 작화감독 교체 이유 탐색### 소제목 2: 러프 원화 특징 분석 아, 진짜... 특정 애니메이션에서 작화감독이 교체된 8화가 주요 포인트입니다. 이 에피소드의 결정적 배경에는 어떤 싸움과 협상이 있었을까요? #### 소제목 </p>
+      </div>
+      <a href="posts/review-001-1pa88so.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
   </div>
+</section>
 </body>
 </html>
