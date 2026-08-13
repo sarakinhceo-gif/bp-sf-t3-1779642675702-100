@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/2) · sf-t3-1779642675702-100</title>
+  <meta name="description" content="sf-t3-1779642675702-100에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sf-t3-1779642675702-100.maphoshirts.com/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* === CSS Reset & Base === */
+ *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+ html { font-size: 100%; scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; background-color: #faf8f6; color: #1e1e1e; line-height: 1.6; }
+ img { max-width: 100%; height: auto; display: block; }
+ a { color: #8b6f5c; text-decoration: none; transition: color 0.2s ease; }
+ a:hover { color: #5c4a3c; }
+
+ /* === Container === */
+ .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+ /* === Typography === */
+ h1, h2, h3, h4 { font-weight: 500; letter-spacing: -0.02em; line-height: 1.3; }
+ h1 { font-size: 2.8rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: -0.03em; }
+ h2 { font-size: 2rem; margin-top: 2.5rem; margin-bottom: 1rem; border-left: 4px solid #c9b6a5; padding-left: 1rem; }
+ h3 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 0.75rem; font-weight: 500; }
+ p { margin-bottom: 1.25rem; font-size: 1.0625rem; color: #2d2d2d; }
+ .text-accent { color: #8b6f5c; font-weight: 500; }
+ .text-small { font-size: 0.9rem; color: #6b6b6b; line-height: 1.5; }
+
+ /* === Header & Navigation === */
+ .site-header { padding: 1.25rem 0; border-bottom: 1px solid #e8e0d8; background-color: #ffffff; }
+ .header-inner { display: flex; justify-content: space-between; align-items: center; }
+ .logo-area { font-size: 1.4rem; font-weight: 600; color: #3b2e26; letter-spacing: -0.02em; }
+ .logo-area span { color: #8b6f5c; }
+ .nav-links { display: flex; gap: 2rem; align-items: center; }
+ .nav-links a { font-size: 0.95rem; font-weight: 500; color: #3b2e26; padding: 0.25rem 0; border-bottom: 2px solid transparent; transition: border-color 0.2s; }
+ .nav-links a:hover { border-bottom-color: #8b6f5c; color: #1e1e1e; }
+ .tel-link { background-color: #8b6f5c; color: #fff !important; padding: 0.5rem 1.25rem !important; border-radius: 40px; font-weight: 500; font-size: 0.95rem; border: none; transition: background-color 0.2s; }
+ .tel-link:hover { background-color: #6f5a4a; border-bottom-color: transparent !important; }
+
+ /* === Hamburger Menu === */
+ .hamburger-menu { display: none; flex-direction: column; cursor: pointer; padding: 0.25rem; background: none; border: none; }
+ .hamburger-menu span { width: 28px; height: 2.5px; background-color: #3b2e26; margin: 4px 0; border-radius: 2px; transition: 0.3s; }
+
+ /* === Blog Article Specific === */
+ .blog-hero { padding: 3rem 0 1.5rem 0; }
+ .blog-hero .meta { display: flex; gap: 1.5rem; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; }
+ .blog-hero .meta .text-small { display: flex; align-items: center; gap: 0.5rem; }
+ .blog-hero .meta .badge { background-color: #e8e0d8; padding: 0.2rem 1rem; border-radius: 30px; font-size: 0.8rem; color: #4a3f36; font-weight: 500; }
+ .article-content { max-width: 800px; margin: 0 auto; padding: 2rem 0 4rem 0; }
+ .article-content .container { padding: 0; }
+ .article-content blockquote { border-left: 4px solid #c9b6a5; margin: 2rem 0; padding: 1rem 1.5rem; background-color: #f4efe9; border-radius: 0 8px 8px 0; font-style: italic; color: #3b2e26; }
+ .article-content blockquote p { margin-bottom: 0; }
+ .article-content ul, .article-content ol { margin: 1.5rem 0; padding-left: 1.5rem; }
+ .article-content li { margin-bottom: 0.75rem; font-size: 1.0625rem; }
+ .article-content .table-wrap { overflow-x: auto; margin: 2rem 0; }
+ .article-content table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+ .article-content th { background-color: #e8e0d8; text-align: left; padding: 0.75rem 1rem; font-weight: 500; }
+ .article-content td { padding: 0.75rem 1rem; border-bottom: 1px solid #e0d6cc; }
+ .article-content .highlight-card { background: #f4efe9; padding: 1.75rem; border-radius: 16px; margin: 2rem 0; }
+ .article-content .highlight-card h4 { margin-bottom: 0.75rem; font-weight: 600; }
+
+ /* === Footer === */
+ .site-footer { background-color: #2b231e; color: #ddd6ce; padding: 2.5rem 0; margin-top: 2rem; }
+ .site-footer .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
+ .site-footer .footer-info { max-width: 340px; }
+ .site-footer .footer-info h4 { color: #fff; margin-bottom: 0.75rem; font-weight: 500; }
+ .site-footer .footer-info p { font-size: 0.95rem; color: #c4bbb0; margin-bottom: 0.4rem; }
+ .site-footer .footer-links a { color: #c4bbb0; margin-right: 1.5rem; font-size: 0.9rem; }
+ .site-footer .footer-links a:hover { color: #fff; }
+
+ /* === Responsive 768 === */
+ @media (max-width: 768px) {
+ .hamburger-menu { display: flex; }
+ .nav-links { display: none; flex-direction: column; background: #ffffff; position: absolute; top: 70px; left: 0; width: 100%; padding: 1.5rem 2rem; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-bottom: 1px solid #e8e0d8; }
+ .nav-links.active { display: flex; }
+ .nav-links a { padding: 0.6rem 0; border-bottom: none; }
+ .tel-link { align-self: flex-start; }
+ h1 { font-size: 2rem; }
+ h2 { font-size: 1.6rem; }
+ .article-content { padding: 1.5rem 0 3rem 0; }
+ .blog-hero .meta { gap: 1rem; }
+ .site-footer .container { flex-direction: column; }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (1/2) · sf-t3-1779642675702-100">
+  <meta property="og:description" content="sf-t3-1779642675702-100에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sf-t3-1779642675702-100.maphoshirts.com/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+ <div class="container header-inner">
+ <div class="logo-area">성우<span>이벤트</span></div>
+ <nav class="nav-links" id="mainNav">
+ <a href="/">홈</a>
+ <a href="/about">소개</a>
+ <a href="/system">시스템</a>
+ <a href="/blog" style="border-bottom-color: #8b6f5c;">블로그</a>
+ 
+ </nav>
+ <button class="hamburger-menu" id="hamburgerBtn" aria-label="메뉴 열기">
+ 
+ </button>
+ </div>
+</header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 33개 · 1/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-002-1pa88so.html">마포 셔츠룸</a>
+        <p class="post-item__summary">마포 지역에서 특별한 시간을 보내고자 하는 분들을 위해 마련된 셔츠룸은 세련된 공간 구성과 차별화된 서비스를 제공하는 문화 공간입니다. 이곳은 방문하시는 모든 분이 편안하게 휴식을 취하며 즐거운 대</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-1355.html">마포 성우이벤트의 구조적 특징과 운영 방식에 대한 고찰</a>
+        <p class="post-item__summary">대다수 사람들은 유흥 문화의 시스템을 단순히 표면적 서비스로만 판단하는 경향이 있는데, 이는 물리적 기반과 운영 논리를 이해하지 못한 무지의 소치다. 마포 성우이벤트 역시 이름만 내건 일회성 행사가</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-780.html">성우가 부르는 마포셔츠룸의 진짜 가치</a>
+        <p class="post-item__summary">마포 셔츠룸이라는 토양에서 벌어지는 성우 이벤트를 논할 때, 대다수의 소비자는 단순히 인기 성우를 초청해 팬 미팅을 하는 행사쯤으로 치부해 버린다. 그러나 이는 해당 상권의 경제 구조와 마케팅 난이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0421.html">마포 셔츠룸 성우이벤트, 분위기와 시스템이 중요하다</a>
+        <p class="post-item__summary">요즘 마포 지역에서 셔츠룸을 찾는 분들이 부쩍 늘어났다. 특히 성우이벤트를 운영하는 업소들이 인기를 끌고 있는데, 처음 방문하는 사람이라면 어떤 점을 살펴봐야 할지 궁금할 것이다. 같은 업종이라도 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0422.html">마포 셔츠룸이 선보이는 편안하고 트렌디한 쇼핑 공간</a>
+        <p class="post-item__summary">성우이벤트가 운영하는 마포 셔츠룸은 한여름 따뜻한 바람을 닮은 차분한 스타일을 선보이는 공간이다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0423.html">마포 셔츠룸 선택 전 알아야 할 핵심 포인트</a>
+        <p class="post-item__summary">마포 지역에서 셔츠룸을 찾는 분들이 늘고 있습니다. 홍대와 합정을 중심으로 다양한 스타일의 업소가 자리 잡고 있어 선택의 폭이 넓은 편입니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0424.html">마포 셔츠룸, 전통의 재해석</a>
+        <p class="post-item__summary">마포 셔츠룸은 전통 한복 디자인을 현대적으로 재해석해 소품처럼 즐길 수 있는 공간입니다. 투명한 유리창을 통해 조용한 샤워실에서 진정한 휴식을 찾을 수 있습니다. 손님들은 이곳에서 한복을 입고 사진</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0425.html">마포에서 셔츠룸 고를 때 놓치지 말아야 할 것들</a>
+        <p class="post-item__summary">마포는 홍대입구와 합정, 상수역 일대를 중심으로 다양한 콘셉트의 셔츠룸이 밀집한 대표적인 상권 가운데 하나로 손꼽힌다. 업소마다 지향하는 인테리어와 시스템이 확연히 다르기 때문에 방문 전에 자신이 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0426.html">마포 셔츠룸: 도심 속 편안함과 세련된 패턴이 만나는 곳</a>
+        <p class="post-item__summary">마포 셔츠룸은 도심 속 간단한 소재에 영감을 받아 편안한 착용감을 선사합니다. 어두운 전설 같은 색상과 심플한 데님이 조화를 이루어 일상 속에서도 눈에 띄는 포인트를 제공합니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0427.html">마포 셔츠룸 이용을 앞두고 있다면</a>
+        <p class="post-item__summary">마포 셔츠룸은 최근 서울 서부 지역에서 꾸준히 관심을 받는 업종 중 하나다. 각 업소마다 다양한 이벤트와 시스템을 도입하면서 방문 전 정보를 찾는 소비자들이 늘어나고 있다. 처음 이용하는 경우 업소</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0428.html">마포 셔츠룸에서 만나는 스타일의 현장</a>
+        <p class="post-item__summary">마포는 젊은 층의 패션과 문화가 융합된 공간이다. 이곳에서 스프링 컬렉션을 감상하며 여유를 즐길 수 있다. 인근 카페와 예술 갤러리도 돋보인다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0429.html">마포 셔츠룸 성우이벤트 업소의 온라인 정보 구성</a>
+        <p class="post-item__summary">마포 지역 셔츠룸 중 성우이벤트를 운영하는 업소는 독특한 콘셉트와 전문성을 앞세워 꾸준한 관심을 받고 있다. 고객들은 방문 전에 업소의 서비스 구성과 분위기를 온라인에서 미리 살펴보는 경우가 많다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0430.html">마포 셔츠룸, 마포 코인노래방 방음 시설 비교 이야기</a>
+        <p class="post-item__summary">마포 셔츠룸은 마포 지역에 위치한 독특한 음악 공간이다. 기존의 노래방과는 달리 차분하면서도 즐거운 분위기를 제공한다. 셔츠를 착용하면 아이덴티티가 강화되어 더욱 몰입감이 높아진다. 편안함과 스타일</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0431.html">마포 셔츠룸 선택 전 알아두면 좋은 것들</a>
+        <p class="post-item__summary">최근 마포 셔츠룸을 찾는 분들이 부쩍 늘었습니다. 홍대와 합정 일대를 중심으로 새로운 업소들이 생겨나면서 선택지도 다양해졌는데요, 처음 방문하는 분들은 정보 부족으로 어려움을 겪기도 합니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0432.html">마포 셔츠룸, 성우 이벤트의 새로운 무대</a>
+        <p class="post-item__summary">마포 셔츠룸은 성우 이벤트를 위한 최고의 무대 공간이다. 세련된 인테리어와 최첨단 음향이 결합해 무대를 완벽하게 지원한다. 각 공연에 맞춰 무대 세팅을 맞춤 제공한다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0433.html">마포 셔츠룸, 이색 이벤트 공간으로 떠오르다</a>
+        <p class="post-item__summary">마포 셔츠룸은 최근 새로운 형태의 이벤트 공간으로 주목받고 있다. 일반 주점과 달리 다채로운 프로그램과 이벤트가 준비되어 있어 방문객의 만족도를 높이고 있다. 특히 성우이벤트는 전문 진행과 함께 색</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0434.html">마포 셔츠룸에서 성우 이벤트가 빛나는 이유</a>
+        <p class="post-item__summary">마포 셔츠룸은 성우와 마이크를 갖춘 편리한 스테이트먼트 공간이다. 음성 콘텐츠 제작자들은 이곳에서 자유로운 발성을 즐길 수 있다. 특히 실내 음향이 정밀하게 조정되어 생생한 현장감을 제공한다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0435.html">마포 셔츠룸 성우이벤트의 선택 기준</a>
+        <p class="post-item__summary">마포 지역에서 셔츠룸을 찾을 때 성우이벤트 콘셉트의 업소들이 자주 언급된다. 실제로 이 지역 셔츠룸들은 공간 대여를 넘어 다양한 이벤트와 체계적인 시스템으로 차별화를 시도하고 있다. 방문객들 사이에</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0436.html">마포 셔츠룸, 새로운 패션 순간을 찾아서</a>
+        <p class="post-item__summary">마포 셔츠룸은 마포구 한가운데에 위치한 독특한 발음 공간이다. 고객들이 편안히 앉아 옷을 탐색하면서, 부드러운 조명과 맞춤형 음악이 조화롭게 배치되어 있다. 이곳은 최신 트렌드와 클래식한 품질을 한</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0246.html">마포 셔츠룸 이용 전 비교하는 구글 틈새 키워드 트래픽 외환 거래 전략</a>
+        <p class="post-item__summary">비즈니스 환경에서 마포 셔츠룸 선택 시 고려해야 할 요소는 매우 다양하며, 이는 효율적인 자산 운용을 고민하는 투자자의 관점과 닮아 있습니다. 정보가 넘치는 시장에서 자신에게 맞는 대안을 찾아내는 </p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
